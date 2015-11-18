@@ -12,7 +12,7 @@ set.seed(1234)
 ######pull in data
 setwd("~/Kaggle/Text_Chefs/Cooking")
 train <- fromJSON("train/train.json", flatten = TRUE)
-test <- fromJSON("train/test.json", flatten = TRUE)
+test <- fromJSON("test/test.json", flatten = TRUE)
 test$cuisine <- "italian"
 dat <- rbind(train,test)
 #######
