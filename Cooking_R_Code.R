@@ -10,9 +10,9 @@ library(e1071)
 set.seed(1234)
 
 ######pull in data
-setwd("/media/jhavelka/Storage1/Kaggle/Cooking")
-train <- fromJSON("train.json", flatten = TRUE)
-test <- fromJSON("test.json", flatten = TRUE)
+setwd("~/Kaggle/Text_Chefs/Cooking")
+train <- fromJSON("train/train.json", flatten = TRUE)
+test <- fromJSON("train/test.json", flatten = TRUE)
 test$cuisine <- "italian"
 dat <- rbind(train,test)
 #######
